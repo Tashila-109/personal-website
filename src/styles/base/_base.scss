@@ -1,0 +1,92 @@
+// INITIALIZE
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Lato:400,700|Roboto:100,300,400,500,700,700i&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 57.5%; // 1rem = 10px
+
+
+
+    @include respond(laptop-screen) {
+        font-size: 50%; //1rem = 9px
+    }
+
+    @include respond(small-laptop) {
+        font-size: 45%; //1rem = 9px
+    }
+
+    @include respond(large-phone) {
+        font-size: 30%; //
+    }
+
+    @include respond(big-screen) {
+        font-size: 70%; // 1rem = 12px
+    }
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: $font-primary;
+    color: var(--color-heading);
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: var(--color-grey-dark-1);
+
+    @include respond(large-phone) {
+        overflow-x: hidden;
+
+    }
+
+    // COLOR VARIABLES
+    --color-primary: #E90016;
+    --color-primary-light: #FA0404;
+    --color-primary-dark: #D3080F;
+
+    --color-grey-dark-1:#1D1D1D;
+
+    --color-tags: #5B5B5B;
+    --color-description: #7D7D7D; // home page
+    --color-nav:#C5C3B7;
+    --color-number: rgba(164, 164, 164, 0.158);
+    --color-icons: #a49b9f;
+    --color-heading: #F4EAF1;
+    --color-heading-small: #F4EAF1;
+    --color-paragraph:#cccccc;
+    --color-icons-light: #F4EAF1;
+    --color-aboutme: #f1f1f1;
+    --color-white: #ffffff;
+    --color-form:#303030;
+    --color-form-text:#A4A4A4;
+}
+
+body.light {
+    // COLOR VARIABLES
+    --color-primary: #E90016;
+    --color-primary-light: #FA0404;
+    --color-primary-dark: #D3080F;
+
+    --color-grey-dark-1: #EDEDED;
+
+    --color-tags: #a8a8a8;
+    --color-description: #7D7D7D; // home page
+    --color-nav: #444444;
+    --color-number: #c5c5c5cb;
+    --color-icons: #7e7d7d;
+    --color-heading: #444444;
+    --color-heading-small: #F4EAF1;
+    --color-paragraph: #1D1D1D;
+    --color-icons-light: #F4EAF1;
+    --color-aboutme: #1D1D1D;
+    --color-white: #ffffff;
+    --color-form: #b6b6b6;
+    --color-form-text: #111111;
+}

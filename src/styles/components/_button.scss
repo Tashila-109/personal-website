@@ -1,0 +1,90 @@
+.button {
+    text-decoration: none;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    border: 2px solid;
+    padding: 5px 1.5rem;
+    line-height: 1.4;
+
+    @include respond(small-laptop) {
+        font-size: 1.8rem;
+    }
+
+    &__full-red:link,
+    &__full-red:visited {
+        color: var(--color-heading-small);
+        font-weight: 500;
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+    &__outline-red:link,
+    &__outline-red:visited {
+        color: var(--color-primary);
+        padding: 5px 4rem;
+
+        @include respond(tab-landscape) {
+            color: var(--color-paragraph);
+            font-weight: 500;
+        }
+    }
+
+    &__outline-red:hover {
+        background-color: var(--color-primary);
+        color: var(--color-heading-small);
+        border-color: var(--color-primary);
+
+        @include respond(tab-landscape) {
+            background-color: var(--color-paragraph);
+            color: var(--color-grey-dark-1);
+            border-color: var(--color-paragraph);
+        }
+    }
+
+    &__red-round {
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: var(--color-heading-small);
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        padding: 5px 2.5rem;
+        display: flex;
+    }
+
+    &__grey-round {
+        border: 1px solid;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: var(--color-heading);
+        margin-left: 5rem;
+        padding: 5px 2.5rem;
+        display: flex;
+    }
+
+    &__grey-aboutme {
+        border: 1px solid;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: var(--color-heading);
+        margin-left: 5rem;
+        padding: 7px 2.5rem;
+        display: flex;
+
+        @include respond(small-laptop) {
+            font-size: 1.5rem;
+        }
+
+        @include respond(large-phone) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__contact {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+
+    }
+}

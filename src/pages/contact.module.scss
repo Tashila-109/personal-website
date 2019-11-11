@@ -1,0 +1,41 @@
+.content-contactme {
+    margin-left: 4.5rem;
+    margin-right: auto;
+
+    width: 45vw;
+    //max-width: 80rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 10;
+
+    @include respond(big-screen) {
+        max-width: 95rem;
+    }
+
+    @include respond(small-laptop) {
+        width: 70rem;
+    }
+
+    @include respond(large-phone) {
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+}
+
+.buttons-contact {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+// Not found
+
+.buttons-notfound {
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: flex-start;
+}

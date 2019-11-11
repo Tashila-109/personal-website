@@ -1,0 +1,124 @@
+.content-inside {
+    margin-left: 4.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 5;
+
+    @include respond(tab-landscape) {
+        justify-content: space-around;
+    }
+
+    @include respond(large-phone) {
+        margin-left: 2rem;
+        margin-right: .5rem;
+    }
+}
+
+.main-heading {
+    padding-bottom: 12rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 8rem;
+
+    &__align {
+        margin-left: 4rem;
+    }
+
+    @include respond(laptop-screen) {
+        padding-bottom: 6rem;
+    }
+}
+
+.img-large {
+    position: absolute;
+    left: auto;
+    bottom: -2rem;
+    right: -20rem;
+    z-index: 2;
+
+    @include respond(big-screen) {}
+
+    @include respond(fhd-screen) {
+        right: -40rem;
+    }
+
+    @include respond(laptop-screen) {
+        right: -50rem;
+    }
+
+    @include respond(small-laptop) {}
+
+    @include respond(tab-landscape) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-port) {}
+
+    &__logo {
+        width: 60vw;
+
+
+        @include respond(big-screen) {
+            width: 60vw;
+        }
+
+        @include respond(fhd-screen) {
+            width: 70vw;
+        }
+
+        @include respond(laptop-screen) {
+            width: 75vw;
+        }
+
+        @include respond(small-laptop) {
+            width: 90vw;
+            opacity: .85;
+        }
+
+        @include respond(tab-landscape) {
+            width: 110vw;
+            opacity: 0.8;
+        }
+
+        @include respond(tab-port) {
+            width: 130vw;
+
+        }
+
+        @include respond(large-phone) {
+            width: 154vw;
+            opacity: 07;
+        }
+    }
+}
+
+.number-large {
+    font-size: 65rem;
+    color: var(--color-number);
+    font-weight: 700;
+    z-index: 1;
+    display: inline-block;
+    line-height: 1;
+
+
+    position: absolute;
+    left: auto;
+    bottom: -13rem;
+    right: -10rem;
+
+
+
+    @include respond(small-laptop) {
+        opacity: .8;
+    }
+
+    @include respond(large-phone) {
+        font-size: 60rem;
+        right: -12rem;
+    }
+
+}

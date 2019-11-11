@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    max-width: 220rem;
+    justify-content: center;
+    margin: auto;
+
+    overflow: hidden;
+
+    @include respond(tab-landscape) {
+        flex-direction: column;
+    }
+}
+
+.content-home {
+    background-color: var(--color-grey-dark-1);
+    flex: 1;
+
+    display: flex;
+    position: relative;
+
+}

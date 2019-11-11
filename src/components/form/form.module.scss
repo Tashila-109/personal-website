@@ -1,0 +1,43 @@
+.contact-form {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-input {
+    width: 100%;
+    border: 0;
+    background: var(--color-form);
+    height: 5rem;
+    font-size: 1.6rem;
+    color: var(--color-form-text);
+    padding: 0 2rem;
+    z-index: 999;
+}
+
+.form-name {
+    width: 35rem;
+}
+
+.form-email {
+    width: 100%;
+    padding-left: 1rem;
+
+}
+
+.form-subject {
+    padding: 1rem 0;
+}
+
+.message-input {
+    min-height: 18rem;
+    font-size: 1.6rem;
+    font-family: $font-primary;
+    font-weight: 300;
+    padding: 2rem;
+}

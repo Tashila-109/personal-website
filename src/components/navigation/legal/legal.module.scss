@@ -1,0 +1,10 @@
+.legal {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-tags);
+
+    @include respond(tab-landscape) {
+        display: none;
+    }
+}

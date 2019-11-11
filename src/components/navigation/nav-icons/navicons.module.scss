@@ -1,0 +1,92 @@
+.side-nav-icons {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+
+    @include respond(tab-landscape) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        align-self: flex-start;
+
+        @include respond(tab-landscape) {
+            padding: 0 1.4rem;
+        }
+
+        @include respond(large-phone) {
+            opacity: 0;
+            align-self: center;
+            padding: 0 5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        fill: var(--color-icons);
+        display: block;
+        padding: 1.4rem 0;
+    }
+
+    &__link:hover {
+        fill: var(--color-primary);
+    }
+
+    &__github {
+        width: 3rem;
+        fill: var(--color-primary-light);
+
+        @include respond(large-phone) {
+            width: 4.5rem;
+        }
+    }
+
+    &__instagram {
+        width: 3rem;
+
+        @include respond(large-phone) {
+            width: 4rem;
+        }
+    }
+
+    &__linkedin {
+        width: 2.5rem;
+
+        @include respond(large-phone) {
+            width: 3.5rem;
+        }
+    }
+
+    &__facebook {
+        width: 1.5rem;
+
+        @include respond(large-phone) {
+            width: 2.5rem;
+        }
+    }
+
+    @include respond(large-phone) {
+
+        margin-left: 0;
+        position: absolute;
+        right: auto;
+        left: auto;
+        top: 78vh;
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0);
+}

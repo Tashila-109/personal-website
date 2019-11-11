@@ -1,0 +1,32 @@
+.burger {
+    display: none;
+    cursor: pointer;
+
+    @include respond(large-phone) {
+        margin-right: 4.4rem;
+        display: block;
+        z-index: 100000;
+    }
+}
+
+.burger div {
+    width: 27px;
+    height: 2px;
+    background-color: var(--color-nav);
+    margin: 6px;
+    transition: all 0.4s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}

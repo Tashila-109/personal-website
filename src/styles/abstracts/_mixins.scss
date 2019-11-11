@@ -1,0 +1,73 @@
+// MEDIA QUERY MANAGER
+/*
+
+700 px: large-phone
+900 px: tab-port
+1100 px: tab-landscape
+1300 px: small-laptops
+1600 px: laptop-screen
+1900 px: Fhd-screens
+2200 px: Big Screens
+*/
+
+//ORDER: Base + typography > general layout + grid > page layout > components
+
+//1em = 16px
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint==big-screen {
+        @media only screen and (min-width: 137.5em) {
+            @content
+        }
+
+        ; // 2200 px
+    }
+
+    @if $breakpoint==fhd-screen {
+        @media only screen and (max-width: 118.75em) {
+            @content
+        }
+
+        ; // 1900 px
+    }
+
+    @if $breakpoint==laptop-screen {
+        @media only screen and (max-width: 100em) {
+            @content
+        }
+
+        ; // 1600 px
+    }
+
+    @if $breakpoint==small-laptop {
+        @media only screen and (max-width: 81.25em) {
+            @content
+        }
+
+        ; // 1300 px
+    }
+
+    @if $breakpoint==tab-landscape {
+        @media only screen and (max-width: 68.75em) {
+            @content
+        }
+
+        ; // 1100 px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; // 900 px
+    }
+
+    @if $breakpoint==large-phone {
+        @media only screen and (max-width: 43.5em) {
+            @content
+        }
+
+        ; // 600 px
+    }
+}

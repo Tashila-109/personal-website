@@ -1,0 +1,131 @@
+.html-tags {
+    display: block;
+    font-family: $font-tags;
+    color: var(--color-tags);
+    font-size: 3rem;
+
+
+    &--inline {
+        display: inline-block;
+    }
+
+    @include respond(tab-landscape) {
+        padding: 2rem 0;
+    }
+
+    @include respond(large-phone) {
+        padding: 1rem 0;
+    }
+}
+
+.color-tags {
+    color: var(--color-primary);
+}
+
+.heading-1 {
+    font-size: 8rem;
+    line-height: 1;
+
+    &__grey {
+        color: var(--color-heading);
+    }
+
+    &__red {
+        color: var(--color-primary-light);
+    }
+
+    &__red-large {
+        color: var(--color-primary-dark);
+        font-size: 11rem;
+    }
+
+    @include respond(large-phone) {
+        font-size: 6.8rem;
+        line-height: 1.2;
+    }
+}
+
+.heading-break {
+    display: block;
+}
+
+.paragraph-intro {
+    font-family: $font-secondary;
+    color: var(--color-description);
+    font-size: 2.4rem;
+
+    @include respond(tab-landscape) {
+        color: var(--color-heading);
+    }
+
+}
+
+.paragraph-aboutme {
+    padding: 2rem 3rem 0 0;
+    font-family: $font-primary;
+    color: var(--color-aboutme);
+    font-size: 2.1rem;
+    font-weight: 300;
+}
+
+.paragraph-contactme {
+    padding: 2rem 3rem 0 0;
+    font-family: $font-primary;
+    color: var(--color-aboutme);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.heading-2 {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.heading-3 {
+    font-weight: 700;
+    font-size: 2.6rem;
+    z-index: 2;
+    line-height: 1;
+    color: var(--color-white);
+
+    &__cover {
+
+        position: relative;
+    }
+
+    &__cover::after {
+        background-color: var(--color-primary);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        transform: rotate(-3deg);
+    }
+}
+
+.heading-4 {
+    color: var(--color-heading);
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+
+    @include respond(small-laptop) {
+        font-size: 2rem;
+        padding: 0 0 2rem 0;
+    }
+}
+
+.paragraph-description {
+    font-family: $font-secondary;
+    color: var(--color-paragraph);
+    font-size: 1.6rem;
+
+    @include respond(small-laptop) {
+        font-size: 1.8rem;
+        padding: 0 0 2rem 0;
+    }
+}

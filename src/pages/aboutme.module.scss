@@ -1,0 +1,55 @@
+.content-aboutme {
+    margin-left: 4.5rem;
+
+    max-width: 95rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include respond(large-phone) {
+        margin-left: 2rem;
+    }
+}
+
+.content-home-skills {
+    background-color: var(--color-grey-dark-1);
+    flex: 1;
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    @include respond(tab-landscape) {
+        flex-direction: column;
+
+    }
+
+}
+
+.skills-img {
+    width: 100%;
+
+    @include respond(laptop-screen) {
+        width: 90%;
+    }
+
+    @include respond(tab-landscape) {
+        width: 85%;
+
+    }
+}
+
+.content-skills {
+    padding: 2rem;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    @include respond(tab-landscape) {
+        padding-right: 2rem;
+
+    }
+}
