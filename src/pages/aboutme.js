@@ -1,5 +1,6 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { Link } from 'gatsby'
+import { useSpring, animated } from 'react-spring'
 
 import Layout from '../components/layout/Layout'
 import Head from '../components/head/Head'
@@ -9,10 +10,22 @@ import indexStyles from './index.module.scss'
 import Skills from '../images/skills-dark.svg'
 
 const AboutMePage = () => {
+    const props = useSpring({
+        config: { duration: 500 },
+        to: {
+            opacity: 1,
+            transform: 'translateX(0)',
+        },
+        from: { opacity: 0, transform: 'translateX(60%)' },
+    })
+
     return (
-        <Layout>
+        <>
             <Head title="About me" />
-            <main className={aboutmeStyles.contentHomeSkills}>
+            <animated.main
+                className={aboutmeStyles.contentHomeSkills}
+                style={props}
+            >
                 <div className={aboutmeStyles.contentAboutme}>
                     <div className={indexStyles.tagGroup__top}>
                         <span className="html-tags">&lt;html&gt;</span>
@@ -57,17 +70,12 @@ const AboutMePage = () => {
                         <div
                             className={`${indexStyles.mainHeading__align} ${indexStyles.buttons}`}
                         >
-                            <AniLink
-                                swipe
-                                direction="left"
-                                duration={1}
-                                entryOffset={80}
-                                hex="#1D1D1D"
+                            <Link
                                 to="/mywork"
                                 className="button button__full-red"
                             >
                                 View Projects
-                            </AniLink>
+                            </Link>
                             <a href="#" className="button button__grey-aboutme">
                                 <svg
                                     className="description-github"
@@ -98,8 +106,8 @@ const AboutMePage = () => {
                         className={aboutmeStyles.skillsImg}
                     />
                 </div>
-            </main>
-        </Layout>
+            </animated.main>
+        </>
     )
 }
 

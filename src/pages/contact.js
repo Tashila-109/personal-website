@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSpring, animated } from 'react-spring'
 
 import Layout from '../components/layout/Layout'
 import Form from '../components/form/Form'
@@ -9,10 +10,19 @@ import indexStyles from './index.module.scss'
 import LogoLarge from '../images/logo-large.svg'
 
 const ContactPage = () => {
+    const props = useSpring({
+        config: { duration: 500 },
+        to: {
+            opacity: 1,
+            transform: 'translateX(0)',
+        },
+        from: { opacity: 0, transform: 'translateX(60%)' },
+    })
+
     return (
-        <Layout>
+        <>
             <Head title="Contact me" />
-            <main className="content-home">
+            <animated.main className="content-home" style={props}>
                 <div className={contactStyles.contentContactme}>
                     <div className={indexStyles.tagGroup__top}>
                         <span className="html-tags">&lt;body&gt;</span>
@@ -58,8 +68,8 @@ const ContactPage = () => {
                     />
                 </div>
                 <div className={indexStyles.numberLarge}>04</div>
-            </main>
-        </Layout>
+            </animated.main>
+        </>
     )
 }
 

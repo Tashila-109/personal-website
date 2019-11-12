@@ -7,7 +7,14 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         'gatsby-plugin-dark-mode',
-        'gatsby-plugin-transition-link',
+        {
+            resolve: `gatsby-plugin-layout`,
+            options: {
+                component: require.resolve(`./src/layouts/index.js`),
+            },
+        },
+        'gatsby-plugin-page-transitions',
+
         {
             resolve: 'gatsby-plugin-sass-resources',
             options: {

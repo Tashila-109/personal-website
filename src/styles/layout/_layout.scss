@@ -10,6 +10,8 @@
     @include respond(tab-landscape) {
         flex-direction: column;
     }
+
+    &>div {}
 }
 
 .content-home {
@@ -19,4 +21,8 @@
     display: flex;
     position: relative;
 
+}
+
+.trans-style {
+    width: 100vw;
 }

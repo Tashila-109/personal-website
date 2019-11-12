@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSpring, animated } from 'react-spring'
 
 import Layout from '../components/layout/Layout'
 import Head from '../components/head/Head'
@@ -7,10 +8,18 @@ import myworkStyles from './mywork.module.scss'
 import natours from '../images/projects/natours.png'
 
 const MyWorkPage = () => {
+    const props = useSpring({
+        config: { duration: 500 },
+        to: {
+            opacity: 1,
+            transform: 'translateX(0)',
+        },
+        from: { opacity: 0, transform: 'translateX(60%)' },
+    })
     return (
-        <Layout>
+        <>
             <Head title="My Work" />
-            <div className="content-home">
+            <animated.div className="Content-home" style={props}>
                 <div className={myworkStyles.contentMywork}>
                     <h2
                         className={`${myworkStyles.headingPortfolio} heading-2`}
@@ -350,7 +359,7 @@ const MyWorkPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </animated.div>
 
             <div className={myworkStyles.contentArrows}>
                 <div className={myworkStyles.arrows}>
@@ -380,7 +389,7 @@ const MyWorkPage = () => {
                     </svg>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 

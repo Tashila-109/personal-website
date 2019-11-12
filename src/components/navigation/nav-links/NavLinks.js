@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { Link } from 'gatsby'
 import BurgerContext from '../../../context/burger/burgerContext'
 
 import navlinksStyles from './navlinks.module.scss'
@@ -13,69 +13,49 @@ const NavLinks = () => {
     return (
         <ul className={`${navlinksStyles.sideNav} ${menuActive}`}>
             <li className={`${navlinksStyles.sideNav__item} nav-links`}>
-                <AniLink
-                    cover
-                    direction="left"
-                    duration={2}
+                <Link
                     to="/"
-                    bg="#1D1D1D"
                     className={navlinksStyles.sideNav__link}
                     activeClassName={navlinksStyles.linkActive}
                 >
                     Home
-                </AniLink>
+                </Link>
             </li>
             <li className={`${navlinksStyles.sideNav__item} nav-links`}>
-                <AniLink
-                    cover
-                    direction="left"
-                    duration={2}
+                <Link
                     to="/mywork"
-                    bg="#1D1D1D"
                     className={navlinksStyles.sideNav__link}
                     activeClassName={navlinksStyles.linkActive}
                 >
                     My Work
-                </AniLink>
+                </Link>
             </li>
             <li className={`${navlinksStyles.sideNav__item} nav-links`}>
-                <AniLink
-                    cover
-                    direction="left"
-                    duration={2}
+                <Link
                     to="/aboutme"
-                    bg="#1D1D1D"
                     className={navlinksStyles.sideNav__link}
                     activeClassName={navlinksStyles.linkActive}
                 >
                     About me
-                </AniLink>
+                </Link>
             </li>
             <li className={`${navlinksStyles.sideNav__item} nav-links`}>
-                <AniLink
-                    cover
-                    direction="left"
-                    duration={2}
+                <Link
                     to="/contact"
-                    bg="#1D1D1D"
                     className={navlinksStyles.sideNav__link}
                     activeClassName={navlinksStyles.linkActive}
                 >
                     Contact
-                </AniLink>
+                </Link>
             </li>
             <li className={`${navlinksStyles.sideNav__item} nav-links`}>
-                <AniLink
-                    cover
-                    direction="left"
-                    duration={2}
+                <Link
                     to="/blog"
-                    bg="#1D1D1D"
                     className={navlinksStyles.sideNav__link}
                     activeClassName={navlinksStyles.linkActive}
                 >
                     Blog
-                </AniLink>
+                </Link>
             </li>
         </ul>
     )
