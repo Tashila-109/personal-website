@@ -3,6 +3,8 @@
     text-align: center;
     padding: 1rem;
     color: var(--color-tags);
+    position: relative;
+    top: 94vh;
 
     @include respond(tab-landscape) {
         display: none;

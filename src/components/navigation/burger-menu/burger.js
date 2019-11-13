@@ -10,6 +10,7 @@ const Burger = () => {
     const onToggle = () => {
         toggleMenu()
         const navLinks = document.querySelectorAll('.nav-links')
+        const sliderLink = document.querySelector('.slider-link')
 
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -20,6 +21,12 @@ const Burger = () => {
                     0.1}s`
             }
         })
+
+        if (sliderLink.style.animation) {
+            sliderLink.style.animation = ''
+        } else {
+            sliderLink.style.animation = `navLinkFade 0.5s ease forwards ${0.8}s`
+        }
     }
 
     const burgerActive = showMenu ? burgerStyles.toggle : ''

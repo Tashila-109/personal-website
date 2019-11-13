@@ -13,8 +13,6 @@ module.exports = {
                 component: require.resolve(`./src/layouts/index.js`),
             },
         },
-        'gatsby-plugin-page-transitions',
-
         {
             resolve: 'gatsby-plugin-sass-resources',
             options: {

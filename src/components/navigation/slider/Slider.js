@@ -12,10 +12,12 @@ const Slider = () => {
     const menuActive = showMenu ? sliderStyles.navActive : ''
 
     return (
-        <div className={`${sliderStyles.themeSwitchWrapper} ${menuActive}`}>
+        <div
+            className={`${sliderStyles.themeSwitchWrapper} ${menuActive} slider-link`}
+        >
             <ThemeToggler>
                 {({ theme, toggleTheme }) => (
-                    <label className={`${sliderStyles.themeSwitch} nav-links`}>
+                    <label className={`${sliderStyles.themeSwitch} `}>
                         <input
                             type="checkbox"
                             onChange={e =>

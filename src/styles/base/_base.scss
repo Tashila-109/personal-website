@@ -24,7 +24,7 @@ html {
     }
 
     @include respond(large-phone) {
-        font-size: 30%; //
+        font-size: 33%; //
     }
 
     @include respond(big-screen) {

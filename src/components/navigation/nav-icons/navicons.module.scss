@@ -5,7 +5,13 @@
     flex-direction: column;
     margin-left: 2rem;
 
+    position: fixed;
+    top: 65vh;
+
     @include respond(tab-landscape) {
+        position: relative;
+        top: 0;
+        margin-right: 1rem;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -14,7 +20,7 @@
         align-self: flex-start;
 
         @include respond(tab-landscape) {
-            padding: 0 1.4rem;
+            padding: 0 1.5rem;
         }
 
         @include respond(large-phone) {
