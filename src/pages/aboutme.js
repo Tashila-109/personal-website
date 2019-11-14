@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useSpring, animated } from 'react-spring'
 
-import Layout from '../components/layout/Layout'
 import Head from '../components/head/Head'
 
 import aboutmeStyles from './aboutme.module.scss'
@@ -10,22 +8,10 @@ import indexStyles from './index.module.scss'
 import Skills from '../images/skills-dark.svg'
 
 const AboutMePage = () => {
-    const props = useSpring({
-        config: { duration: 500 },
-        to: {
-            opacity: 1,
-            transform: 'translateX(0)',
-        },
-        from: { opacity: 0, transform: 'translateX(60%)' },
-    })
-
     return (
         <>
             <Head title="About me" />
-            <animated.main
-                className={aboutmeStyles.contentHomeSkills}
-                style={props}
-            >
+            <main className={aboutmeStyles.contentHomeSkills}>
                 <div className={aboutmeStyles.contentAboutme}>
                     <div className={indexStyles.tagGroup__top}>
                         <span className="html-tags">&lt;html&gt;</span>
@@ -106,7 +92,7 @@ const AboutMePage = () => {
                         className={aboutmeStyles.skillsImg}
                     />
                 </div>
-            </animated.main>
+            </main>
         </>
     )
 }

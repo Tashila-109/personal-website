@@ -1,7 +1,6 @@
 .content-mywork {
     margin-left: 1rem;
 
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,14 +18,14 @@
     }
 }
 
-.content-arrows {
-    background-color: var(--color-grey-dark-1);
-    display: flex;
+// .content-arrows {
+//     background-color: var(--color-grey-dark-1);
+//     display: flex;
 
-    @include respond(small-laptop) {
-        display: none;
-    }
-}
+//     @include respond(small-laptop) {
+//         display: none;
+//     }
+// }
 
 .heading-portfolio {
     align-self: flex-start;
@@ -36,7 +35,7 @@
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 98%;
 
     @include respond(small-laptop) {
         padding-top: 5rem;

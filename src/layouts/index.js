@@ -1,4 +1,5 @@
 import React from 'react'
+import Transition from '../components/transition'
 
 import '../styles/main.scss'
 
@@ -8,8 +9,7 @@ const Layout = props => {
     return (
         <div className="container">
             <Navigation />
-
-            {props.children}
+            <Transition location={props.location}>{props.children}</Transition>
         </div>
     )
 }

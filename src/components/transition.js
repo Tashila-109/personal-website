@@ -4,31 +4,36 @@ import {
     Transition as ReactTransition,
 } from 'react-transition-group'
 
-const timeout = 500
+const timeout = 400
 const getTransitionStyles = {
     entering: {
+        transform: 'translateX(80%)',
         position: `absolute`,
         opacity: 0,
+        overflow: 'hidden',
     },
     entered: {
-        transition: `opacity ${timeout}ms ease-in-out`,
+        transform: 'translateX(0%)',
+        transition: `opacity ${timeout}ms ease-in-out, transform ${timeout}ms ease-in-out`,
         opacity: 1,
     },
     exiting: {
-        transition: `opacity ${timeout}ms ease-in-out`,
+        transform: 'translateX(-80%)',
+        transition: `opacity ${timeout}ms ease-in-out, transform ${timeout}ms ease-in-out`,
         opacity: 0,
+        overflow: 'hidden',
     },
 }
-
 const Transition = props => {
     const { children, location } = props
+
     return (
         <TransitionGroup>
             <ReactTransition
                 key={location.pathname}
                 timeout={{
-                    enter: timeout,
-                    exit: timeout,
+                    enter: 400,
+                    exit: 400,
                 }}
             >
                 {status => (

@@ -11,7 +11,19 @@
         flex-direction: column;
     }
 
-    &>div {}
+    &>div {
+        flex: 1;
+        display: flex;
+
+
+        &>div {
+            flex: 1;
+            display: flex;
+
+
+        }
+    }
+
 }
 
 .content-home {
