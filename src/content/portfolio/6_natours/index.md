@@ -1,5 +1,6 @@
 ---
 title: 'Natours'
+place: 'project2'
 tag: 6
 live: 'https://natours-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/natours-sass'

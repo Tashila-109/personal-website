@@ -1,10 +1,11 @@
 ---
 title: 'Natours Fullstack'
+place: 'project1'
 tag: 1
 live: 'https://natours-tashila.herokuapp.com/'
 source: 'https://github.com/Tashila-109/natours-fullstack'
 stack: 'Node - Express - MongoDB - Pug Templates'
-image: 'fidalgo.png'
+image: './natours_fullstack.png'
 description: Lorem ipsum dolor sit amet, consetetur
     sadipscing elitr, sed diam nonumy eirmod
     tempor invidunt ut labore et dolore magna

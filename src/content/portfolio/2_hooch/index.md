@@ -1,5 +1,6 @@
 ---
 title: 'HoocH.lk'
+place: 'project2'
 tag: 2
 live: 'https://www.hooch.lk/'
 source: 'https://github.com/Tashila-109/hooch-lk'

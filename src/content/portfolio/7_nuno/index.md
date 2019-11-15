@@ -1,5 +1,6 @@
 ---
 title: 'Nuno Theme'
+place: 'project1'
 tag: 7
 live: 'https://nuno-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/nuno-bootstrap'

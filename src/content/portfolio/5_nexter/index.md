@@ -1,5 +1,6 @@
 ---
 title: 'Nexter'
+place: 'project1'
 tag: 5
 live: 'https://nexter-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/nexter-sass'

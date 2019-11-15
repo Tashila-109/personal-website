@@ -1,5 +1,6 @@
 ---
 title: 'Laptop Store'
+place: 'project1'
 tag: 9
 live: 'https://laptopstore-tashila.herokuapp.com/'
 source: 'https://github.com/Tashila-109/laptop-store-node'

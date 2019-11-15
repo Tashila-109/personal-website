@@ -1,5 +1,6 @@
 ---
 title: 'Trillo'
+place: 'project2'
 tag: 8
 live: 'https://trillo-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/trillo-sass'

@@ -1,5 +1,6 @@
 ---
 title: 'Synematic'
+place: 'project2'
 tag: 4
 live: 'http://synematiclk.herokuapp.com/'
 source: 'https://github.com/Tashila-109/synematic-website'

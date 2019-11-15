@@ -1,5 +1,6 @@
 ---
 title: 'Omnifood'
+place: 'project1'
 tag: 11
 live: 'https://omnifood-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/omnifood-website'
