@@ -11,7 +11,6 @@ const Form = () => {
                 <form
                     name="contact"
                     className={formStyles.contactForm}
-                    id="contact"
                     method="post"
                     data-netlify="true"
                     data-netlify-recaptcha="true"
@@ -66,12 +65,13 @@ const Form = () => {
 
                     <div data-netlify-recaptcha="true"></div>
 
-                    <a
+                    <button
                         className={`${formStyles.formSubmit} button button__outline-red button__contact`}
                         type="submit"
+                        value="Send Message"
                     >
                         Send
-                    </a>
+                    </button>
                 </form>
             </div>
         </Fragment>
