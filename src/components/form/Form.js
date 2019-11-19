@@ -9,9 +9,10 @@ const Form = () => {
         <Fragment>
             <div className={indexStyles.mainHeading__align}>
                 <form
+                    name="contact"
                     className={formStyles.contactForm}
                     id="contact"
-                    method="POST"
+                    method="post"
                     data-netlify="true"
                     data-netlify-recaptcha="true"
                 >
