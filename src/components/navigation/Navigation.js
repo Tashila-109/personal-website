@@ -19,7 +19,6 @@ const Navigation = () => {
                 <Slider />
                 <NavLinks />
                 <NavIcons />
-                <Legal />
                 <Burger />
             </BurgerState>
         </nav>

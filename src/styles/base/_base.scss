@@ -33,6 +33,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: $font-primary;
     color: var(--color-heading);

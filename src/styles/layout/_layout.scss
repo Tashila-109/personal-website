@@ -35,6 +35,16 @@
 
 }
 
+.content-work {
+    background-color: var(--color-grey-dark-1);
+    flex: 1;
+
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+}
+
 .trans-style {
     width: 100vw;
 }

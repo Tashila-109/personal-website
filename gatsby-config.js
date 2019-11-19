@@ -7,12 +7,9 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         'gatsby-plugin-dark-mode',
-        {
-            resolve: `gatsby-plugin-layout`,
-            options: {
-                component: require.resolve(`./src/layouts/index.js`),
-            },
-        },
+
+        `gatsby-plugin-layout`,
+
         {
             resolve: 'gatsby-source-filesystem',
             options: {

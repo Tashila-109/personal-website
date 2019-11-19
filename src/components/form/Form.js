@@ -8,7 +8,12 @@ const Form = () => {
     return (
         <Fragment>
             <div className={indexStyles.mainHeading__align}>
-                <form className={formStyles.contactForm} id="contact">
+                <form
+                    className={formStyles.contactForm}
+                    id="contact"
+                    method="POST"
+                    data-netlify="true"
+                >
                     <div className={formStyles.formRow}>
                         <div className={formStyles.formName}>
                             <input
@@ -55,18 +60,16 @@ const Form = () => {
                             htmFor="subject"
                         ></label>
                     </div>
+                    <div>
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <a
+                        className={`${formStyles.formSubmit} button button__outline-red button__contact`}
+                        type="submit"
+                    >
+                        Send
+                    </a>
                 </form>
-            </div>
-
-            <div
-                className={`${indexStyles.mainHeading__align} ${contactStyles.buttonsContact}`}
-            >
-                <a
-                    href=""
-                    className="button button__outline-red button__contact"
-                >
-                    Send
-                </a>
             </div>
         </Fragment>
     )

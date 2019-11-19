@@ -35,7 +35,7 @@ const MyWorkPage = () => {
     return (
         <>
             <Head title="My Work" />
-            <div className="Content-home">
+            <div className="content-work">
                 <div className={myworkStyles.contentMywork}>
                     <h2
                         className={`${myworkStyles.headingPortfolio} heading-2`}
@@ -72,15 +72,16 @@ const MyWorkPage = () => {
                                             }
                                         >
                                             <p
-                                                className="paragraph-description
-                                    "
+                                                className={`${myworkStyles.descriptionBox__item} paragraph-description`}
                                             >
                                                 {
                                                     edge.node.frontmatter
                                                         .description
                                                 }
                                             </p>
-                                            <h4 className="heading-4">
+                                            <h4
+                                                className={`${myworkStyles.descriptionBox__item}  heading-4`}
+                                            >
                                                 {edge.node.frontmatter.stack}
                                             </h4>
                                             <div
@@ -166,16 +167,17 @@ const MyWorkPage = () => {
                                             className={`${myworkStyles.descriptionBox} ${myworkStyles.descriptionBox__2}`}
                                         >
                                             <p
-                                                className="paragraph-description
-                                    "
+                                                className={`${myworkStyles.descriptionBox__item} paragraph-description`}
                                             >
                                                 {
                                                     edge.node.frontmatter
                                                         .description
                                                 }
                                             </p>
-                                            <h4 className="heading-4">
-                                                Lorem ipsum dolor sit amet
+                                            <h4
+                                                className={`${myworkStyles.descriptionBox__item}  heading-4`}
+                                            >
+                                                {edge.node.frontmatter.stack}
                                             </h4>
                                             <div
                                                 className={

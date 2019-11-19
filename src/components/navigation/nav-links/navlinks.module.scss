@@ -5,10 +5,10 @@
     margin-left: 2rem;
 
     position: fixed;
-    top: 26vh;
+    top: 28vh;
 
     &__item {
-        padding: 0.8rem 0;
+        padding: 1rem 0;
 
         @include respond(tab-landscape) {
             padding: 0 2rem;
