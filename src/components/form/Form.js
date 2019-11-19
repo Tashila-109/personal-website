@@ -12,8 +12,10 @@ const Form = () => {
                     name="contact"
                     className={formStyles.contactForm}
                     method="post"
+                    netlify-honeypot="bot-field"
                     data-netlify="true"
                 >
+                    <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
                     <div className={formStyles.formRow}>
                         <div className={formStyles.formName}>
