@@ -16,6 +16,7 @@ const Form = () => {
                     data-netlify="true"
                     data-netlify-recaptcha="true"
                 >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className={formStyles.formRow}>
                         <div className={formStyles.formName}>
                             <input
