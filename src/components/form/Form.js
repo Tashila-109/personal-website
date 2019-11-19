@@ -13,6 +13,7 @@ const Form = () => {
                     id="contact"
                     method="POST"
                     data-netlify="true"
+                    data-netlify-recaptcha="true"
                 >
                     <div className={formStyles.formRow}>
                         <div className={formStyles.formName}>
