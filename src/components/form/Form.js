@@ -61,9 +61,9 @@ const Form = () => {
                             htmFor="subject"
                         ></label>
                     </div>
-                    <div>
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
+
+                    <div data-netlify-recaptcha="true"></div>
+
                     <a
                         className={`${formStyles.formSubmit} button button__outline-red button__contact`}
                         type="submit"
