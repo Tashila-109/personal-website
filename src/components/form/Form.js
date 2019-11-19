@@ -13,7 +13,6 @@ const Form = () => {
                     className={formStyles.contactForm}
                     method="post"
                     data-netlify="true"
-                    data-netlify-recaptcha="true"
                 >
                     <input type="hidden" name="form-name" value="contact" />
                     <div className={formStyles.formRow}>
@@ -62,8 +61,6 @@ const Form = () => {
                             htmFor="subject"
                         ></label>
                     </div>
-
-                    <div data-netlify-recaptcha="true"></div>
 
                     <button
                         className={`${formStyles.formSubmit} button button__outline-red button__contact`}
