@@ -24,7 +24,7 @@ html {
     }
 
     @include respond(large-phone) {
-        font-size: 33%; //
+        font-size: 37%; //
     }
 
     @include respond(big-screen) {
@@ -42,31 +42,29 @@ body {
     min-height: 100vh;
     background-color: var(--color-grey-dark-1);
 
-    @include respond(large-phone) {
-        overflow-x: hidden;
-
-    }
-
     // COLOR VARIABLES
     --color-primary: #E90016;
     --color-primary-light: #FA0404;
     --color-primary-dark: #D3080F;
 
-    --color-grey-dark-1:#1D1D1D;
+    --color-grey-dark-1: #1D1D1D;
 
     --color-tags: #5B5B5B;
     --color-description: #7D7D7D; // home page
-    --color-nav:#C5C3B7;
+    --color-nav: #C5C3B7;
     --color-number: rgba(164, 164, 164, 0.158);
     --color-icons: #a49b9f;
     --color-heading: #F4EAF1;
     --color-heading-small: #F4EAF1;
-    --color-paragraph:#cccccc;
+    --color-paragraph: #cccccc;
     --color-icons-light: #F4EAF1;
     --color-aboutme: #f1f1f1;
     --color-white: #ffffff;
-    --color-form:#303030;
-    --color-form-text:#A4A4A4;
+    --color-form: #303030;
+    --color-form-text: #A4A4A4;
+
+    --color-card: #2c2c2c;
+    --color-line: #494949;
 }
 
 body.light {
@@ -90,4 +88,7 @@ body.light {
     --color-white: #ffffff;
     --color-form: #b6b6b6;
     --color-form-text: #111111;
+
+    --color-card: #fff;
+    --color-line: #d6d6d6;
 }

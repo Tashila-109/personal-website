@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
 
 import Head from '../components/head/Head'
 
@@ -10,6 +9,7 @@ const MyWorkPage = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
+                filter: { frontmatter: { place: { eq: "project" } } }
                 sort: { fields: [frontmatter___tag], order: ASC }
             ) {
                 edges {
@@ -94,6 +94,7 @@ const MyWorkPage = () => {
                                                         edge.node.frontmatter
                                                             .live
                                                     }
+                                                    target="_blank"
                                                     className="button button__red-round"
                                                 >
                                                     <svg
@@ -117,6 +118,7 @@ const MyWorkPage = () => {
                                                         edge.node.frontmatter
                                                             .source
                                                     }
+                                                    target="_blank"
                                                     className="button button__grey-round"
                                                 >
                                                     <svg
@@ -189,6 +191,7 @@ const MyWorkPage = () => {
                                                         edge.node.frontmatter
                                                             .live
                                                     }
+                                                    target="_blank"
                                                     className="button button__red-round"
                                                 >
                                                     <svg
@@ -212,6 +215,7 @@ const MyWorkPage = () => {
                                                         edge.node.frontmatter
                                                             .source
                                                     }
+                                                    target="_blank"
                                                     className="button button__grey-round"
                                                 >
                                                     <svg

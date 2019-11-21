@@ -1,22 +1,10 @@
 ---
 title: 'Natours'
-place: 'project2'
-tag: 6
+place: 'project'
+tag: 7
 live: 'https://natours-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/natours-sass'
-stack: 'Html - Csss - Sass'
+stack: 'Html - Csss - Sass - BEM'
 image: 'natours.png'
-description: Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd gubergren, no sea
-    takimata sanctus est Lorem ipsum dolor sit
-    amet. Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd.
+description: Landing page for fictional Travel company. Styling is done with Sass and custom grid is used for layout. Advanced animations are also present on the website. The website is completely responsive.
 ---

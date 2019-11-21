@@ -31,27 +31,25 @@ const AboutMePage = () => {
                         <p
                             className={`${indexStyles.mainHeading__align} paragraph-aboutme`}
                         >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam.
+                            Im a Full-stack developer and UI / UX designer with
+                            a great passion for building things with code.
                         </p>
                         <p
                             className={`${indexStyles.mainHeading__align} paragraph-aboutme`}
                         >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam
-                            voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren, no
-                            sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur
+                            The main area of my expertise is in web
+                            technologies. My main stack of technologies is the
+                            MERN stack (MongoDB, Express, React and Node). For
+                            back end development I mainly use Node Js or Python
+                            (Flask & Django). I also use TypeScript in my
+                            projects.
                         </p>
                         <p
                             className={`${indexStyles.mainHeading__align} paragraph-aboutme`}
                         >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam.
+                            Im currently working on mobile technologies, React
+                            Native and Flutter and in the process of learning
+                            Cloud technologies.
                         </p>
                         <div
                             className={`${indexStyles.mainHeading__align} ${indexStyles.buttons}`}

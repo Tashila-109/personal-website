@@ -81,7 +81,7 @@
         right: auto;
         left: auto;
         top: 78vh;
-        width: 100vw;
+        width: 0vw;
         flex-direction: row;
         align-items: center;
         background-color: transparent;
@@ -94,5 +94,6 @@
 }
 
 .nav-active {
+    width: 100vw;
     transform: translateX(0);
 }

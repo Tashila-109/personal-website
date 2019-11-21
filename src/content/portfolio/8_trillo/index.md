@@ -1,22 +1,10 @@
 ---
 title: 'Trillo'
-place: 'project2'
-tag: 8
+place: 'project'
+tag: 9
 live: 'https://trillo-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/trillo-sass'
 stack: 'Html - Csss - Sass'
 image: 'trillo.png'
-description: Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd gubergren, no sea
-    takimata sanctus est Lorem ipsum dolor sit
-    amet. Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd.
+description: Website for a fictional booking agency. The layout was created using flexbox and the website has advanced animations. Flexbox makes it easy to place all content in one dimension and makes it easier for responsive design.
 ---

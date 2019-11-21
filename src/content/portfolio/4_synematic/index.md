@@ -1,22 +1,10 @@
 ---
 title: 'Synematic'
-place: 'project2'
-tag: 4
+place: 'project'
+tag: 5
 live: 'http://synematiclk.herokuapp.com/'
 source: 'https://github.com/Tashila-109/synematic-website'
-stack: 'Html - Sass - Node - Express - Thress Js -   Handlebar'
+stack: 'Html - Sass - Node - Express - Thress Js - Handlebar - Web AR'
 image: 'synematic.png'
-description: Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd gubergren, no sea
-    takimata sanctus est Lorem ipsum dolor sit
-    amet. Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd.
+description: Synematic project was started to apply Augmented Reality into several industries. The food industry was the main aim first, where 3D modelling of a food item was done and was showcased using Web AR. This is the landing page for Synematic LK, styled using bootstrap 4 and sass. The backend is written with Node Js, and the Three Js Library is used to render the 3D models on the webpage.
 ---

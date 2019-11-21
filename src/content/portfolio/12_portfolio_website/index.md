@@ -1,22 +1,10 @@
 ---
 title: 'Portfolio Website'
-place: 'project2'
-tag: 12
+place: 'project'
+tag: 1
 live: '#'
 source: '#'
-stack: 'Sass - React - Gatsby - Node - '
+stack: 'Sass - React - Gatsby - Node - Contentful'
 image: 'portfolio_website.png'
-description: Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd gubergren, no sea
-    takimata sanctus est Lorem ipsum dolor sit
-    amet. Lorem ipsum dolor sit amet, consetetur
-    sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea
-    rebum. Stet clita kasd.
+description: This is the current website you are on right now. The website is built using the Gatsby Js which is a React framework, making the site fast and enabling good SEO for my portfolio. The site reads data from markdown files as well as the Contentful headless CMS which is use for my blog. It also has a switch between dark and light mode and also has a contact form. The styling was done using Sass and scss modules.
 ---

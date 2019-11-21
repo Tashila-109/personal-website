@@ -19,7 +19,7 @@
     }
 
     @include respond(large-phone) {
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-right: 1rem;
     }
 }
@@ -38,4 +38,23 @@
 
     display: flex;
     justify-content: flex-start;
+}
+
+.main-heading {
+    padding-bottom: 12rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 8rem;
+
+    &__align {
+        margin-left: 4rem;
+    }
+
+    @include respond(laptop-screen) {
+        max-width: 97vw;
+        padding-bottom: 4rem;
+        padding-left: 5rem;
+    }
 }

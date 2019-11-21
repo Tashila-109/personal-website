@@ -1,7 +1,16 @@
 module.exports = {
     siteMetadata: {
         title: 'Full-stack Developer',
+        description: `I'm Tashila, a full-stack developer and an UI/UX Designer.`,
         author: 'Tashila Fernando',
+
+        social: {
+            twitter: 'Tashila_dev',
+            instagram: 'tashila.io',
+            facebook: 'tashila.fernando',
+            github: 'Tashila-109',
+            email: 'tashila.dev@gmail.com',
+        },
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -9,6 +18,14 @@ module.exports = {
         'gatsby-plugin-dark-mode',
 
         `gatsby-plugin-layout`,
+
+        {
+            resolve: 'gatsby-source-contentful',
+            options: {
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+            },
+        },
 
         {
             resolve: 'gatsby-source-filesystem',
@@ -31,17 +48,19 @@ module.exports = {
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: `gatsby-plugin-manifest`,
             options: {
-                path: `${__dirname}/src/content/`,
+                name: `Tashila | Full-stack Developer`,
+                short_name: `Tashila`,
+                icon: `src/images/Logo.png`,
+                start_url: `/`,
+                background_color: `#1D1D1D`,
+                theme_color: `#E90016`,
+                display: `minimal-ui`,
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/content`,
-            },
-        },
+        'gatsby-plugin-offline',
+        'gatsby-plugin-sitemap',
+        'gatsby-plugin-robots-txt',
     ],
 }

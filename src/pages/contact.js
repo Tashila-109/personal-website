@@ -16,7 +16,7 @@ const ContactPage = () => {
                     <div className={indexStyles.tagGroup__top}>
                         <span className="html-tags">&lt;body&gt;</span>
                     </div>
-                    <div className={indexStyles.mainHeading}>
+                    <div className={contactStyles.mainHeading}>
                         <span className="html-tags">&lt;h1&gt;</span>
                         <h1
                             className={`${indexStyles.mainHeading__align} heading-1 heading-1__red`}

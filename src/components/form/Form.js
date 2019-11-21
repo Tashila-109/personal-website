@@ -25,7 +25,10 @@ const Form = () => {
                                 name="name"
                                 placeholder="Name"
                             />
-                            <label className="name-label" htmFor="name"></label>
+                            <label
+                                className="name-label"
+                                htmlFor="name"
+                            ></label>
                         </div>
                         <div className={formStyles.formEmail}>
                             <input
@@ -36,7 +39,7 @@ const Form = () => {
                             />
                             <label
                                 className="email-label"
-                                htmFor="email"
+                                htmlFor="email"
                             ></label>
                         </div>
                     </div>
@@ -49,7 +52,7 @@ const Form = () => {
                         />
                         <label
                             className="subject-label"
-                            htmFor="subject"
+                            htmlFor="subject"
                         ></label>
                     </div>
                     <div className={formStyles.formMessage}>
@@ -60,7 +63,7 @@ const Form = () => {
                         ></textarea>
                         <label
                             className="subject-label"
-                            htmFor="subject"
+                            htmlFor="subject"
                         ></label>
                     </div>
 

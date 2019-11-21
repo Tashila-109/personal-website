@@ -48,3 +48,13 @@
 .trans-style {
     width: 100vw;
 }
+
+.item-1 {
+    @media (min-width: 60em) {
+        grid-column: 1 / span 2;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
