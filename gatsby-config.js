@@ -3,7 +3,7 @@ module.exports = {
         title: 'Full-stack Developer',
         description: `I'm Tashila, a full-stack developer and an UI/UX Designer.`,
         author: 'Tashila Fernando',
-        siteUrl: 'tashila.io',
+        siteUrl: 'https://tashila.io',
         social: {
             twitter: 'Tashila_dev',
             instagram: 'tashila.io',
@@ -13,6 +13,16 @@ module.exports = {
         },
     },
     plugins: [
+        'gatsby-plugin-sitemap',
+        'gatsby-plugin-robots-txt',
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: process.env.TRACKING_ID,
+                // Defines where to place the tracking script - `true` in the head and `false` in the body
+                head: false,
+            },
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         'gatsby-plugin-dark-mode',
@@ -60,15 +70,5 @@ module.exports = {
             },
         },
         'gatsby-plugin-offline',
-        'gatsby-plugin-sitemap',
-        'gatsby-plugin-robots-txt',
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: 'UA-153074295-1',
-                // Defines where to place the tracking script - `true` in the head and `false` in the body
-                head: false,
-            },
-        },
     ],
 }
