@@ -6,7 +6,6 @@ import NavLogo from './nav-logo/NavLogo'
 import Slider from './slider/Slider'
 import NavLinks from './nav-links/NavLinks'
 import NavIcons from './nav-icons/NavIcons'
-import Legal from './legal/Legal'
 import Burger from './burger-menu/burger'
 
 import BurgerState from '../../context/burger/BurgerState'

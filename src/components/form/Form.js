@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 
 import formStyles from './form.module.scss'
 import indexStyles from '../../pages/index.module.scss'
-import contactStyles from '../../pages/contact.module.scss'
 
 const Form = () => {
     return (

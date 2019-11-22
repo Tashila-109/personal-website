@@ -13,7 +13,11 @@ const NavIcons = () => {
     return (
         <ul className={`${iconStyles.sideNavIcons} ${menuActive}`}>
             <li className={`${iconStyles.sideNavIcons__item} nav-links`}>
-                <a href="#1" className={iconStyles.sideNavIcons__link}>
+                <a
+                    href="https://github.com/Tashila-109"
+                    className={iconStyles.sideNavIcons__link}
+                    target="_blank"
+                >
                     <svg
                         className={iconStyles.sideNavIcons__github}
                         xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,11 @@ const NavIcons = () => {
                 </a>
             </li>
             <li className={`${iconStyles.sideNavIcons__item} nav-links`}>
-                <a href="#2" className={iconStyles.sideNavIcons__link}>
+                <a
+                    href="https://www.instagram.com/tashila.io/"
+                    className={iconStyles.sideNavIcons__link}
+                    target="_blank"
+                >
                     <svg
                         className={iconStyles.sideNavIcons__instagram}
                         xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +52,11 @@ const NavIcons = () => {
                 </a>
             </li>
             <li className={`${iconStyles.sideNavIcons__item} nav-links`}>
-                <a href="#3" className={iconStyles.sideNavIcons__link}>
+                <a
+                    href="https://www.linkedin.com/in/tashila-fernando/"
+                    className={iconStyles.sideNavIcons__link}
+                    target="_blank"
+                >
                     <svg
                         className={iconStyles.sideNavIcons__linkedin}
                         xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +72,11 @@ const NavIcons = () => {
                 </a>
             </li>
             <li className={`${iconStyles.sideNavIcons__item} nav-links`}>
-                <a href="#4" className={iconStyles.sideNavIcons__link}>
+                <a
+                    href="https://www.facebook.com/tashila.fernando"
+                    className={iconStyles.sideNavIcons__link}
+                    target="_blank"
+                >
                     <svg
                         className={iconStyles.sideNavIcons__facebook}
                         xmlns="http://www.w3.org/2000/svg"

@@ -60,7 +60,11 @@ const AboutMePage = () => {
                             >
                                 View Projects
                             </Link>
-                            <a href="#" className="button button__grey-aboutme">
+                            <a
+                                href="https://github.com/Tashila-109?tab=repositories"
+                                className="button button__grey-aboutme"
+                                target="_blank"
+                            >
                                 <svg
                                     className={aboutmeStyles.descriptionGithub}
                                     xmlns="http://www.w3.org/2000/svg"

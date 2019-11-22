@@ -12,6 +12,9 @@ const Head = ({ title }) => {
             site {
                 siteMetadata {
                     title
+                    description
+                    author
+                    siteUrl
                 }
             }
         }
@@ -24,6 +27,24 @@ const Head = ({ title }) => {
             <link rel="icon" type="image/png" sizes="32x32" href={faviconOne} />
             <link rel="icon" type="image/png" sizes="16x16" href={faviconTwo} />
             <link rel="manifest" href="/site.webmanifest" />
+
+            <meta name="title" content={data.site.siteMetadata.title} />
+            <meta
+                name="description"
+                content={data.site.siteMetadata.description}
+            />
+            <meta name="author" content={data.site.siteMetadata.author} />
+            <meta
+                name="keywords"
+                content="Full-stack, developer, front end, back end, software"
+            />
+            <meta property="og:title" content={data.site.siteMetadata.title} />
+            <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+            <meta
+                property="og:description"
+                content={data.site.siteMetadata.description}
+            />
+            <meta property="og:type" content="website" />
         </Helmet>
     )
 }
