@@ -20,13 +20,13 @@
         align-self: center;
 
         @include respond(tab-landscape) {
-            padding: 0 1.5rem;
+            padding: 0 1.8rem;
         }
 
         @include respond(large-phone) {
             opacity: 0;
             align-self: center;
-            padding: 0 5rem;
+            padding: 0 2.5rem;
         }
     }
 
@@ -80,7 +80,7 @@
         position: fixed;
         right: auto;
         left: auto;
-        top: 62vh;
+        top: 58vh;
         width: 0vw;
         flex-direction: row;
         align-items: center;
