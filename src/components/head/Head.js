@@ -15,6 +15,7 @@ const Head = ({ title }) => {
                     description
                     author
                     siteUrl
+                    imageShare
                 }
             }
         }
@@ -45,6 +46,19 @@ const Head = ({ title }) => {
                 content={data.site.siteMetadata.description}
             />
             <meta property="og:type" content="website" />
+            <meta property="og:image" content={data.site.siteMetadata.imageShare} />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta
+                property="twitter:url"
+                content={data.site.siteMetadata.siteUrl}
+            />
+            <meta
+                property="twitter:title"
+                content={data.site.siteMetadata.title}
+            />
+            <meta property="twitter:description" content={data.site.siteMetadata.description} />
+            <meta property="twitter:image" content={data.site.siteMetadata.imageShare} />
         </Helmet>
     )
 }

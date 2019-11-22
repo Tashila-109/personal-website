@@ -1,7 +1,7 @@
 ---
 title: 'Natours'
 place: 'project'
-tag: 7
+tag: 8
 live: 'https://natours-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/natours-sass'
 stack: 'Html - Csss - Sass - BEM'

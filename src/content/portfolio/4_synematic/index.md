@@ -1,7 +1,7 @@
 ---
 title: 'Synematic'
 place: 'project'
-tag: 5
+tag: 6
 live: 'http://synematiclk.herokuapp.com/'
 source: 'https://github.com/Tashila-109/synematic-website'
 stack: 'Html - Sass - Node - Express - Thress Js - Handlebar - Web AR'

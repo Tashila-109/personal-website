@@ -67,10 +67,10 @@
     }
 
     &__facebook {
-        width: 1.5rem;
+        width: 3rem;
 
         @include respond(large-phone) {
-            width: 2.5rem;
+            width: 4rem;
         }
     }
 

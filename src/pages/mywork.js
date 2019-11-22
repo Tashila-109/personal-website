@@ -96,6 +96,7 @@ const MyWorkPage = () => {
                                                     }
                                                     target="_blank"
                                                     className="button button__red-round"
+                                                    rel="noopener noreferrer"
                                                 >
                                                     <svg
                                                         className={
@@ -120,6 +121,7 @@ const MyWorkPage = () => {
                                                     }
                                                     target="_blank"
                                                     className="button button__grey-round"
+                                                    rel="noopener noreferrer"
                                                 >
                                                     <svg
                                                         className={
@@ -193,6 +195,7 @@ const MyWorkPage = () => {
                                                     }
                                                     target="_blank"
                                                     className="button button__red-round"
+                                                    rel="noopener noreferrer"
                                                 >
                                                     <svg
                                                         className={
@@ -217,6 +220,7 @@ const MyWorkPage = () => {
                                                     }
                                                     target="_blank"
                                                     className="button button__grey-round"
+                                                    rel="noopener noreferrer"
                                                 >
                                                     <svg
                                                         className={

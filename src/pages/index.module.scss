@@ -49,6 +49,11 @@
     @include respond(laptop-screen) {
         padding-bottom: 6rem;
     }
+
+    @include respond(large-phone) {
+        padding-left: 5rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .buttons {
@@ -125,7 +130,7 @@
         }
 
         @include respond(large-phone) {
-            width: 154vw;
+            width: 166vw;
             opacity: 07;
         }
     }

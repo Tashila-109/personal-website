@@ -11,6 +11,7 @@ module.exports = {
             github: 'Tashila-109',
             email: 'tashila.dev@gmail.com',
         },
+        imageShare: 'twitter.png'
     },
     plugins: [
         'gatsby-plugin-react-helmet',

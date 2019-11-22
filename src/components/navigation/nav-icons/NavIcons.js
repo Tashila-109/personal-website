@@ -17,7 +17,7 @@ const NavIcons = () => {
                     href="https://github.com/Tashila-109"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__github}
@@ -38,7 +38,7 @@ const NavIcons = () => {
                     href="https://www.instagram.com/tashila.io/"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__instagram}
@@ -58,7 +58,7 @@ const NavIcons = () => {
                     href="https://www.linkedin.com/in/tashila-fernando/"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__linkedin}
@@ -76,23 +76,15 @@ const NavIcons = () => {
             </li>
             <li className={`${iconStyles.sideNavIcons__item} nav-links`}>
                 <a
-                    href="https://www.facebook.com/tashila.fernando"
+                    href="https://twitter.com/Tashila_dev"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
-                    <svg
-                        className={iconStyles.sideNavIcons__facebook}
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 29.874"
-                    >
-                        <path
-                            id="Icon_awesome-facebook-f"
-                            data-name="Icon awesome-facebook-f"
-                            d="M16.561,16.8l.83-5.406H12.2V7.889a2.7,2.7,0,0,1,3.048-2.921h2.358V.365A28.76,28.76,0,0,0,13.423,0C9.151,0,6.358,2.589,6.358,7.277V11.4H1.609V16.8H6.358v13.07H12.2V16.8Z"
-                            transform="translate(-1.609)"
-                        />
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39.158" height="31.803" viewBox="0 0 39.158 31.803" className={iconStyles.sideNavIcons__facebook}>
+  <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M35.133,11.307c.025.348.025.7.025,1.044,0,10.609-8.075,22.834-22.834,22.834A22.679,22.679,0,0,1,0,31.581a16.6,16.6,0,0,0,1.938.1A16.072,16.072,0,0,0,11.9,28.252a8.04,8.04,0,0,1-7.5-5.566,10.12,10.12,0,0,0,1.516.124,8.488,8.488,0,0,0,2.112-.273A8.026,8.026,0,0,1,1.59,14.661v-.1A8.082,8.082,0,0,0,5.218,15.58,8.037,8.037,0,0,1,2.733,4.847a22.812,22.812,0,0,0,16.548,8.4,9.06,9.06,0,0,1-.2-1.839A8.033,8.033,0,0,1,32.971,5.915a15.8,15.8,0,0,0,5.094-1.938A8,8,0,0,1,34.536,8.4a16.089,16.089,0,0,0,4.621-1.242,17.251,17.251,0,0,1-4.025,4.149Z" transform="translate(0 -3.381)"/>
+</svg>
+
                 </a>
             </li>
         </ul>
