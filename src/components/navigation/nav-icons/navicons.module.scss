@@ -17,7 +17,7 @@
     }
 
     &__item {
-        align-self: flex-start;
+        align-self: center;
 
         @include respond(tab-landscape) {
             padding: 0 1.5rem;
@@ -59,7 +59,7 @@
     }
 
     &__linkedin {
-        width: 2.5rem;
+        width: 2.8rem;
 
         @include respond(large-phone) {
             width: 3.5rem;
@@ -80,7 +80,7 @@
         position: absolute;
         right: auto;
         left: auto;
-        top: 78vh;
+        top: 70vh;
         width: 0vw;
         flex-direction: row;
         align-items: center;

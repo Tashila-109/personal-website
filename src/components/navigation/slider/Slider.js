@@ -23,7 +23,6 @@ const Slider = () => {
                             onChange={e =>
                                 toggleTheme(e.target.checked ? 'light' : 'dark')
                             }
-                            checked={theme === 'light'}
                         />{' '}
                         <div
                             className={`${sliderStyles.slider} ${sliderStyles.round}`}

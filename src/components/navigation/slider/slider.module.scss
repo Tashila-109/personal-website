@@ -30,14 +30,14 @@
 
 .theme-switch {
     display: inline-block;
-    height: 2.2rem;
+    height: 2.8rem;
     position: relative;
-    width: 4rem;
+    width: 4.6rem;
 
     @include respond(large-phone) {
 
-        height: 3.6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 6.6rem;
     }
 }
 
@@ -58,17 +58,17 @@
 
 .slider:before {
     background-color: #fff;
-    bottom: 2px;
+    bottom: 3px;
     content: "";
-    height: 1.8rem;
+    height: 2.1rem;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 1.8rem;
+    width: 2.1rem;
 
     @include respond(large-phone) {
-        height: 2.9rem;
-        width: 2.9rem;
+        height: 3rem;
+        width: 3rem;
     }
 }
 
@@ -77,7 +77,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(1.6rem);
+    transform: translateX(1.7rem);
 }
 
 .slider.round {
