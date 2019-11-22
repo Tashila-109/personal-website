@@ -3,6 +3,8 @@ import BurgerContext from '../../../context/burger/burgerContext'
 
 import burgerStyles from './burger.module.scss'
 
+import useLockBodyScroll from '../../../utils/LockScroll'
+
 const Burger = () => {
     const burgerContext = useContext(BurgerContext)
     const { toggleMenu, showMenu } = burgerContext
@@ -14,9 +16,6 @@ const Burger = () => {
 
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
-                link.style.animation = `navLinkFadeOut 0.5s ease forwards ${index /
-                    11 +
-                    0.1}s`
                 link.style.animation = ''
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index /
@@ -26,7 +25,6 @@ const Burger = () => {
         })
 
         if (sliderLink.style.animation) {
-            sliderLink.style.animation = `navLinkFadeOut 0.5s ease forwards ${0.8}s`
             sliderLink.style.animation = ''
         } else {
             sliderLink.style.animation = `navLinkFade 0.5s ease forwards ${0.8}s`

@@ -8,8 +8,6 @@ import NavLinks from './nav-links/NavLinks'
 import NavIcons from './nav-icons/NavIcons'
 import Burger from './burger-menu/burger'
 
-
-
 import BurgerState from '../../context/burger/BurgerState'
 
 const Navigation = () => {

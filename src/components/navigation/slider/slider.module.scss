@@ -15,7 +15,7 @@
 
     @include respond(large-phone) {
         margin-left: 0;
-        position: absolute;
+        position: fixed;
         align-items: center;
         top: 88vh;
         background-color: transparent;
@@ -89,6 +89,7 @@ input:checked+.slider:before {
 }
 
 .nav-active {
+    overflow: hidden;
     width: 100%;
     transform: translateX(0);
 }

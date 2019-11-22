@@ -55,10 +55,10 @@
         margin-left: 0;
         padding-top: 8vh;
         font-size: 3.4rem;
-        position: absolute;
+        position: fixed;
         right: auto;
         left: auto;
-        height: 100%;
+        height: 0;
         top: 0;
         display: flex;
         flex-direction: column;
@@ -67,6 +67,7 @@
         background-color: var(--color-grey-dark-1);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+
     }
 }
 
@@ -75,6 +76,8 @@
 }
 
 .nav-active {
-    width: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     transform: translateX(0);
 }
