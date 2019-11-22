@@ -64,6 +64,7 @@ const AboutMePage = () => {
                                 href="https://github.com/Tashila-109?tab=repositories"
                                 className="button button__grey-aboutme"
                                 target="_blank"
+                                rel="noopener"
                             >
                                 <svg
                                     className={aboutmeStyles.descriptionGithub}

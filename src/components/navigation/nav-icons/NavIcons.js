@@ -17,6 +17,7 @@ const NavIcons = () => {
                     href="https://github.com/Tashila-109"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
+                    rel="noopener"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__github}
@@ -37,6 +38,7 @@ const NavIcons = () => {
                     href="https://www.instagram.com/tashila.io/"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
+                    rel="noopener"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__instagram}
@@ -56,6 +58,7 @@ const NavIcons = () => {
                     href="https://www.linkedin.com/in/tashila-fernando/"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
+                    rel="noopener"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__linkedin}
@@ -76,6 +79,7 @@ const NavIcons = () => {
                     href="https://www.facebook.com/tashila.fernando"
                     className={iconStyles.sideNavIcons__link}
                     target="_blank"
+                    rel="noopener"
                 >
                     <svg
                         className={iconStyles.sideNavIcons__facebook}
