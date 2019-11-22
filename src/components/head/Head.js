@@ -23,6 +23,7 @@ const Head = ({ title }) => {
 
     return (
         <Helmet>
+            <html lang="en" />
             <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
             <link rel="apple-touch-icon" sizes="180x180" href={appleIcon} />
             <link rel="icon" type="image/png" sizes="32x32" href={faviconOne} />
@@ -46,7 +47,10 @@ const Head = ({ title }) => {
                 content={data.site.siteMetadata.description}
             />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={data.site.siteMetadata.imageShare} />
+            <meta
+                property="og:image"
+                content={data.site.siteMetadata.imageShare}
+            />
 
             <meta property="twitter:card" content="summary_large_image" />
             <meta
@@ -57,8 +61,14 @@ const Head = ({ title }) => {
                 property="twitter:title"
                 content={data.site.siteMetadata.title}
             />
-            <meta property="twitter:description" content={data.site.siteMetadata.description} />
-            <meta property="twitter:image" content={data.site.siteMetadata.imageShare} />
+            <meta
+                property="twitter:description"
+                content={data.site.siteMetadata.description}
+            />
+            <meta
+                property="twitter:image"
+                content={data.site.siteMetadata.imageShare}
+            />
         </Helmet>
     )
 }
