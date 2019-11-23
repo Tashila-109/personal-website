@@ -8,7 +8,7 @@
     h2 {
         font-size: 3.3rem;
         margin-bottom: .6rem;
-        margin-top: 2.7rem;
+        margin-top: 3.2rem;
     }
 
     p {
@@ -16,7 +16,7 @@
         font-size: 2.2rem;
         margin-bottom: 1.7rem;
         font-weight: 400;
-        font-family: 'Times New Roman', Times, serif;
+
 
         @include respond(large-phone) {
             font-size: 2.6rem;
@@ -55,7 +55,7 @@
 
 .blog-image {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .body-image {
