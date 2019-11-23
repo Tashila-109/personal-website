@@ -49,10 +49,7 @@ const Head = ({ title }) => {
                 content={data.site.siteMetadata.description}
             />
             <meta property="og:type" content="website" />
-            <meta
-                property="og:image"
-                content={data.site.siteMetadata.imageShare}
-            />
+            <meta property="og:image" content={metaImage} />
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta
