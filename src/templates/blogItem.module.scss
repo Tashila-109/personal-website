@@ -1,22 +1,21 @@
 .content-blog {
-    background-color: var(--color-card);
-    box-shadow: 0 9px 14px rgba(0, 0, 0, 0.25);
     padding: 4rem;
     margin: 8rem auto 2rem auto;
-    max-width: 110rem;
+    max-width: 120rem;
 
     h2 {
-        font-size: 3.3rem;
+        font-size: 4.2rem;
         margin-bottom: .6rem;
         margin-top: 6rem;
+        font-family: $font-blog;
     }
 
     p {
         line-height: 1.8;
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 1.7rem;
         font-weight: 400;
-
+        font-family: $font-blog;
 
         @include respond(large-phone) {
             font-size: 2.6rem;
@@ -28,6 +27,7 @@
         display: inline-block;
         white-space: pre-wrap !important;
         padding: 0 1rem !important;
+        font-family: monospace;
 
         span {
             display: inline-block;
@@ -41,16 +41,17 @@
 }
 
 .blog-heading {
-    font-size: 5rem;
+    font-size: 5.2rem;
     line-height: 1.6;
     font-weight: 600;
 }
 
 .blog-date {
     display: block;
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
     font-weight: 300;
+    color: var(--color-date);
 }
 
 .blog-image {
