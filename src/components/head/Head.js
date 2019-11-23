@@ -21,6 +21,8 @@ const Head = ({ title }) => {
         }
     `)
 
+    const metaImage = `${data.site.siteMetadata.siteUrl}/${data.site.siteMetadata.imageShare}`
+
     return (
         <Helmet>
             <html lang="en" />
@@ -65,7 +67,7 @@ const Head = ({ title }) => {
                 property="twitter:description"
                 content={data.site.siteMetadata.description}
             />
-            <meta property="twitter:image" content="/twitter.png" />
+            <meta property="twitter:image" content={metaImage} />
         </Helmet>
     )
 }
