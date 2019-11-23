@@ -40,7 +40,7 @@
     }
 
     @include respond(large-phone) {
-        font-size: 6.8rem;
+        font-size: 6.4rem;
         line-height: 1.2;
     }
 }
@@ -122,10 +122,10 @@
 .paragraph-description {
     font-family: $font-secondary;
     color: var(--color-paragraph);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 
     @include respond(small-laptop) {
-        font-size: 1.8rem;
+        font-size: 2rem;
         padding: 0 0 2rem 0;
     }
 }

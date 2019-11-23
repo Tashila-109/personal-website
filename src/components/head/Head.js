@@ -52,21 +52,15 @@ const Head = ({ title }) => {
                 content={data.site.siteMetadata.imageShare}
             />
 
-            <meta property="twitter:card" content="summary_large_image" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:url" content={data.site.siteMetadata.siteUrl} />
+            <meta name="twitter:title" content={data.site.siteMetadata.title} />
             <meta
-                property="twitter:url"
-                content={data.site.siteMetadata.siteUrl}
-            />
-            <meta
-                property="twitter:title"
-                content={data.site.siteMetadata.title}
-            />
-            <meta
-                property="twitter:description"
+                name="twitter:description"
                 content={data.site.siteMetadata.description}
             />
             <meta
-                property="twitter:image"
+                name="twitter:image"
                 content={data.site.siteMetadata.imageShare}
             />
         </Helmet>

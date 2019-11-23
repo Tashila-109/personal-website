@@ -42,7 +42,7 @@ const AboutMePage = () => {
                             MERN stack (MongoDB, Express, React and Node). For
                             back end development I mainly use Node Js or Python
                             (Flask & Django). I also use TypeScript in my
-                            projects.
+                            projects, and specialize in C++.
                         </p>
                         <p
                             className={`${indexStyles.mainHeading__align} paragraph-aboutme`}
