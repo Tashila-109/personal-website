@@ -5,26 +5,26 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Prism from 'prismjs'
 
-import Head from '../components/head/Head'
+import BlogHead from '../components/head/BlogHead'
 
 import blogitemStyles from './blogItem.module.scss'
 
 export const query = graphql`
     query($slug: String!) {
-        contentfulBlogPost(slug: { eq: $slug }) {
+        post: ghostPost(slug: { eq: $slug }) {
+            slug
             title
-            publishedDate(formatString: "MMMM Do, YYYY")
-            author
-            language
-            blogCover {
-                title
-                file {
-                    url
-                }
+            published_at(formatString: "MMMM Do, YYYY")
+            primary_author {
+                name
             }
-            body {
-                json
+            feature_image
+            excerpt
+            reading_time
+            primary_tag {
+                name
             }
+            html
         }
     }
 `
@@ -32,56 +32,47 @@ export const query = graphql`
 const BlogItem = props => {
     useEffect(() => {
         // call the highlightAll() function to style our code blocks
-        Prism.highlightAll()
+        setTimeout(() => Prism.highlightAll(), 0)
+        var preList = document.getElementById('blog').querySelectorAll('pre')
+        for (var i = 0; i < preList.length; ++i) {
+            preList[i].classList.add('line-numbers')
+        }
     })
-
-    const options = {
-        renderNode: {
-            'embedded-asset-block': node => {
-                const alt = node.data.target.fields.title['en-US']
-                const url = node.data.target.fields.file['en-US'].url
-
-                return (
-                    <>
-                        <img
-                            alt={alt}
-                            src={url}
-                            className={blogitemStyles.bodyImage}
-                        />
-                        <span className={blogitemStyles.bodyImageText}>
-                            {alt}
-                        </span>
-                    </>
-                )
-            },
-        },
-    }
 
     return (
         <>
-            <Head title={props.data.contentfulBlogPost.title} />
-            <main
-                className={`${blogitemStyles.contentBlog} language-${props.data.contentfulBlogPost.language}`}
-            >
+            <BlogHead
+                title={props.data.post.title}
+                description={props.data.post.excerpt}
+                author={props.data.post.primary_author.name}
+                tag={props.data.post.primary_tag.name}
+                slug={props.data.post.slug}
+                image={props.data.post.feature_image}
+            />
+            <main className={`${blogitemStyles.contentBlog}`} id="blog">
+                <span className={blogitemStyles.blogTag}>
+                    {props.data.post.primary_tag.name}
+                </span>
                 <h1 className={`${blogitemStyles.blogHeading} heading-2`}>
-                    {props.data.contentfulBlogPost.title}
+                    {props.data.post.title}
                 </h1>
                 <span className={blogitemStyles.blogDate}>
-                    {props.data.contentfulBlogPost.publishedDate}
+                    {props.data.post.published_at} -{' '}
+                    {props.data.post.reading_time} min read
                 </span>
                 <img
-                    src={props.data.contentfulBlogPost.blogCover.file.url}
-                    alt={props.data.contentfulBlogPost.blogCover.title}
+                    src={props.data.post.feature_image}
+                    alt={props.data.post.title}
                     className={blogitemStyles.blogImage}
                 />
-                {documentToReactComponents(
-                    props.data.contentfulBlogPost.body.json,
-                    options
-                )}
+                <div
+                    dangerouslySetInnerHTML={{ __html: props.data.post.html }}
+                ></div>
+
                 <span className={blogitemStyles.line}></span>
                 <span className={blogitemStyles.writtenBy}>Written by</span>
                 <span className={blogitemStyles.author}>
-                    {props.data.contentfulBlogPost.author}
+                    {props.data.post.primary_author.name}
                 </span>
             </main>
         </>

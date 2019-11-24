@@ -10,9 +10,16 @@
         font-family: $font-blog;
     }
 
+    h3 {
+        font-size: 3.8rem;
+        margin-bottom: .6rem;
+        margin-top: 6rem;
+        font-family: $font-blog;
+    }
+
     p {
         line-height: 1.8;
-        font-size: 2rem;
+        font-size: 2.4rem;
         margin-bottom: 1.7rem;
         font-weight: 400;
         font-family: $font-blog;
@@ -22,21 +29,27 @@
         }
     }
 
-    code {
-        background-color: #494949 !important;
-        display: inline-block;
-        white-space: pre-wrap !important;
-        padding: 0 1rem !important;
+    pre {
         font-family: monospace;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 
-        span {
-            display: inline-block;
-        }
+    code {
+        background-color: #2d2d2d;
+        color: #f8f8f2;
+        white-space: pre-wrap !important;
     }
 
     a {
         color: #999;
 
+    }
+
+    li {
+        line-height: 1.8;
+        font-size: 2.4rem;
+        margin-left: 2rem;
     }
 }
 
@@ -48,7 +61,7 @@
 
 .blog-date {
     display: block;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 5rem;
     font-weight: 300;
     color: var(--color-date);
@@ -97,4 +110,12 @@
     display: block;
     font-size: 2.6rem;
     font-weight: 500;
+}
+
+.blog-tag {
+    color: #3eb0ef !important;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }

@@ -11,7 +11,7 @@ module.exports = {
             github: 'Tashila-109',
             email: 'tashila.dev@gmail.com',
         },
-        imageShare: 'twitter.png'
+        imageShare: 'twitter.png',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -30,12 +30,11 @@ module.exports = {
         'gatsby-plugin-dark-mode',
 
         `gatsby-plugin-layout`,
-
         {
-            resolve: 'gatsby-source-contentful',
+            resolve: `gatsby-source-ghost`,
             options: {
-                spaceId: process.env.CONTENTFUL_SPACE_ID,
-                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+                apiUrl: process.env.GHOST_API_URL,
+                contentApiKey: process.env.GHOST_API_KEY,
             },
         },
 

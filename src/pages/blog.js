@@ -9,22 +9,23 @@ import blogStyles from './blog.module.scss'
 const Blog = () => {
     const data = useStaticQuery(graphql`
         query {
-            allContentfulBlogPost(
-                sort: { fields: publishedDate, order: DESC }
+            allGhostPost(
+                sort: { order: DESC, fields: [published_at] }
+                filter: { primary_author: { name: { eq: "Tashila Fernando" } } }
             ) {
                 edges {
                     node {
-                        title
                         slug
-                        publishedDate(formatString: "MMMM Do, YYYY")
-                        author
-                        summary {
-                            summary
+                        title
+                        published_at(formatString: "MMMM Do, YYYY")
+                        primary_author {
+                            name
                         }
-                        blogCover {
-                            file {
-                                url
-                            }
+                        excerpt
+                        feature_image
+                        reading_time
+                        primary_tag {
+                            name
                         }
                     }
                 }
@@ -37,7 +38,7 @@ const Blog = () => {
             <Head title="Blog" />
             <main className="content-home">
                 <div className={blogStyles.band}>
-                    {data.allContentfulBlogPost.edges.map((edge, index) => {
+                    {data.allGhostPost.edges.map((edge, index) => {
                         return (
                             <div className={`item-${index + 1}`}>
                                 <Link
@@ -47,14 +48,17 @@ const Blog = () => {
                                     <div
                                         className={blogStyles.thumb}
                                         style={{
-                                            backgroundImage: `url(${edge.node.blogCover.file.url})`,
+                                            backgroundImage: `url(${edge.node.feature_image})`,
                                         }}
                                     ></div>
                                     <article>
+                                        <span className={blogStyles.blogTag}>
+                                            {edge.node.primary_tag.name}
+                                        </span>
                                         <h1>{edge.node.title}</h1>
-                                        <p>{edge.node.summary.summary}</p>
+                                        <p>{edge.node.excerpt}</p>
                                         <span>
-                                            {`${edge.node.author} - ${edge.node.publishedDate}`}
+                                            {`${edge.node.published_at}  -  ${edge.node.reading_time} min read`}
                                         </span>
                                     </article>
                                 </Link>

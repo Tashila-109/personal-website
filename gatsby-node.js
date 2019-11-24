@@ -15,7 +15,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const blogTemplate = path.resolve('./src/templates/blogItem.js')
     const res = await graphql(`
         query {
-            allContentfulBlogPost {
+            allGhostPost(
+                filter: { primary_author: { name: { eq: "Tashila Fernando" } } }
+            ) {
                 edges {
                     node {
                         slug
@@ -25,7 +27,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         }
     `)
 
-    res.data.allContentfulBlogPost.edges.forEach(edge => {
+    res.data.allGhostPost.edges.forEach(edge => {
         createPage({
             component: blogTemplate,
             path: `/blog/${edge.node.slug}`,
