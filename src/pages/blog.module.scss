@@ -51,6 +51,11 @@
         font-size: 2.6rem;
         margin: 0;
         color: var(--color-heading);
+
+        @include respond(large-phone) {
+            font-size: 3.4rem;
+
+        }
     }
 
     p {
@@ -59,6 +64,11 @@
         line-height: 1.6;
         font-size: 1.6rem;
         color: var(--color-paragraph);
+
+        @include respond(large-phone) {
+            font-size: 2.2rem;
+
+        }
     }
 
     span {
@@ -68,6 +78,11 @@
         text-transform: uppercase;
         letter-spacing: .05em;
         margin: 2em 0 0 0;
+
+        @include respond(large-phone) {
+            font-size: 1.6rem !important;
+
+        }
     }
 
     .thumb {
@@ -80,4 +95,9 @@
 .blog-tag {
     margin-top: 0rem !important;
     color: #3eb0ef !important;
+
+    @include respond(large-phone) {
+        font-size: 2rem !important;
+
+    }
 }
