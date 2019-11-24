@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { graphql } from 'gatsby'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Prism from 'prismjs'
 
