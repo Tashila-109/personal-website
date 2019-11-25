@@ -16,7 +16,49 @@ module.exports = {
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
-        'gatsby-plugin-robots-txt',
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://tashila.io',
+                sitemap: 'https://tashila.io/sitemap.xml',
+                policy: [{ userAgent: '*', allow: '/' }],
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Tashila | Full-stack Developer`,
+                short_name: `Tashila`,
+                icon: `src/images/Logo.png`,
+                icons: [
+                    {
+                        src: `/favicon/android-chrome-192x192.png`,
+                        sizes: `192x192`,
+                        type: `image/png`,
+                    },
+                    {
+                        src: `/favicon/android-chrome-512x512.png`,
+                        sizes: `512x512`,
+                        type: `image/png`,
+                    },
+                    {
+                        src: `/favicon/favicon-16x16.png`,
+                        sizes: `16x16`,
+                        type: `image/png`,
+                    },
+                    {
+                        src: `/favicon/favicon-32x32.png`,
+                        sizes: `32x32`,
+                        type: `image/png`,
+                    },
+                ],
+                start_url: `/`,
+                background_color: `#1D1D1D`,
+                theme_color: `#E90016`,
+                display: `standalone`,
+            },
+        },
+        'gatsby-plugin-offline',
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
@@ -58,18 +100,5 @@ module.exports = {
 
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        {
-            resolve: `gatsby-plugin-manifest`,
-            options: {
-                name: `Tashila | Full-stack Developer`,
-                short_name: `Tashila`,
-                icon: `src/images/Logo.png`,
-                start_url: `/`,
-                background_color: `#1D1D1D`,
-                theme_color: `#E90016`,
-                display: `minimal-ui`,
-            },
-        },
-        'gatsby-plugin-offline',
     ],
 }
