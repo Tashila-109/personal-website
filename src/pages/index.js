@@ -5,12 +5,22 @@ import Head from '../components/head/Head'
 
 import indexStyles from './index.module.scss'
 import LogoLarge from '../images/logo-large.svg'
+import Typist from 'react-typist'
+import { fadeIn } from 'react-animations'
+import Radium, { StyleRoot } from 'radium'
+
+const styles = {
+    fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+    },
+}
 
 const IndexPage = () => {
     return (
         <>
             <Head title="Tashila" />
-            <main className="content-home">
+            <StyleRoot className="content-home" style={styles.fadeIn}>
                 <div className={indexStyles.contentInside}>
                     <div className={indexStyles.tagGroup__top}>
                         <span className="html-tags">&lt;html&gt;</span>
@@ -22,17 +32,41 @@ const IndexPage = () => {
                         <h1
                             className={`${indexStyles.mainHeading__align} heading-1 heading-1__grey`}
                         >
-                            <span className="heading-break">Hey,</span>
+                            <Typist
+                                className="heading-break"
+                                cursor={{
+                                    hideWhenDone: true,
+                                    hideWhenDoneDelay: 0,
+                                }}
+                            >
+                                Hey,
+                            </Typist>
 
-                            <span className="heading-break">
+                            <Typist
+                                className="heading-break"
+                                cursor={{
+                                    hideWhenDone: true,
+                                    hideWhenDoneDelay: 0,
+                                }}
+                            >
+                                <Typist.Delay ms={300} />
                                 I'm{' '}
                                 <span className="heading-1 heading-1__red">
                                     T
                                 </span>
                                 ashila
-                            </span>
+                            </Typist>
                             <span className="heading-break">
-                                Full-stack developer.{' '}
+                                <Typist
+                                    cursor={{
+                                        hideWhenDone: true,
+                                        hideWhenDoneDelay: 0,
+                                    }}
+                                    className={indexStyles.mainStack}
+                                >
+                                    <Typist.Delay ms={800} />
+                                    Full-stack Developer.
+                                </Typist>{' '}
                                 <span className="html-tags html-tags--inline">
                                     &lt;/ h1&gt;
                                 </span>
@@ -73,7 +107,7 @@ const IndexPage = () => {
                     />
                 </div>
                 <div className={indexStyles.numberLarge}>01</div>
-            </main>
+            </StyleRoot>
         </>
     )
 }
