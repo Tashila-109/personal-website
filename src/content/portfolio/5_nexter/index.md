@@ -1,7 +1,7 @@
 ---
 title: 'Nexter'
 place: 'project'
-tag: 7
+tag: 8
 live: 'https://nexter-tashila.netlify.com/'
 source: 'https://github.com/Tashila-109/nexter-sass'
 stack: 'Html - Csss - Sass - CSS Grid'
