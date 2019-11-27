@@ -39,10 +39,6 @@ const Blog = () => {
             <main className="content-home">
                 <div className={blogStyles.band}>
                     {data.allGhostPost.edges.map((edge, index) => {
-                        const imageArray = edge.node.feature_image.split(':')
-
-                        const imageUrl = 'https:'.concat(imageArray[1])
-
                         return (
                             <div className={`item-${index + 1}`}>
                                 <Link
@@ -52,7 +48,7 @@ const Blog = () => {
                                     <div
                                         className={blogStyles.thumb}
                                         style={{
-                                            backgroundImage: `url(${imageUrl})`,
+                                            backgroundImage: `url(${edge.node.feature_image})`,
                                         }}
                                     ></div>
                                     <article>

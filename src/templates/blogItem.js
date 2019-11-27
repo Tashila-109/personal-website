@@ -38,10 +38,6 @@ const BlogItem = props => {
         }
     })
 
-    const imageArray = props.data.post.feature_image.split(':')
-
-    const imageUrl = 'https:'.concat(imageArray[1])
-
     return (
         <>
             <BlogHead
@@ -50,7 +46,7 @@ const BlogItem = props => {
                 author={props.data.post.primary_author.name}
                 tag={props.data.post.primary_tag.name}
                 slug={props.data.post.slug}
-                image={imageUrl}
+                image={props.data.post.feature_image}
             />
             <main className={`${blogitemStyles.contentBlog}`} id="blog">
                 <span className={blogitemStyles.blogTag}>
@@ -64,7 +60,7 @@ const BlogItem = props => {
                     {props.data.post.reading_time} min read
                 </span>
                 <img
-                    src={imageUrl}
+                    src={props.data.post.feature_image}
                     alt={props.data.post.title}
                     className={blogitemStyles.blogImage}
                 />
