@@ -49,7 +49,7 @@ const IndexPage = () => {
                                     hideWhenDoneDelay: 0,
                                 }}
                             >
-                                <Typist.Delay ms={300} />
+                                <Typist.Delay ms={400} />
                                 I'm{' '}
                                 <span className="heading-1 heading-1__red">
                                     T
@@ -64,7 +64,7 @@ const IndexPage = () => {
                                     }}
                                     className={indexStyles.mainStack}
                                 >
-                                    <Typist.Delay ms={800} />
+                                    <Typist.Delay ms={1200} />
                                     Full-stack Developer.
                                 </Typist>{' '}
                                 <span className="html-tags html-tags--inline">
