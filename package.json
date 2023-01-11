@@ -33,7 +33,7 @@
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-source-ghost": "^4.0.3",
-    "gatsby-transformer-remark": "^2.6.34",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.5",
     "node-sass-chokidar": "^1.4.0",
     "prismjs": "^1.17.1",
